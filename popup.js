@@ -77,8 +77,10 @@ function fillRandomData() {
     });
   }
 
-  const randomEmail = `${Math.random().toString(36).substring(2, 10)}@mail.com`;
-  const randomUsername = Math.random().toString(36).substring(2, 10);
+  const emailDomains = ["gmail.com", "outlook.com", "stdapp.com"];
+  const randomDomain = emailDomains[Math.floor(Math.random() * emailDomains.length)]; // Select a random domain
+  const randomUsername = Math.random().toString(36).substring(2, 10); // Generate a random string for username
+  const randomEmail = `${randomUsername}@${randomDomain}`; // Create email using random username and domain
 
   const emailField = document.querySelector("#basic_email");
   const usernameField = document.querySelector("#basic_username");
