@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "Auto Fill Random Data",
+  "version": "1.0",
+  "description": "Auto fill random values into specified fields.",
+  "permissions": ["scripting", "activeTab"],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
